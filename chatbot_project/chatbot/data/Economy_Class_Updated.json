@@ -1,0 +1,20 @@
+[
+    {
+        "Economy Lite":"20kg (44lb)",
+        "Economy Classic":"25kg (55lb)",
+        "Economy Convenience":"30kg (66lb)",
+        "Economy Comfort":"35kg (77lb)"
+    },
+    {
+        "Economy Lite":"1 piece\n(23kg\/50lb each)",
+        "Economy Classic":"2 pieces (23kg\/50lb each)",
+        "Economy Convenience":"2 pieces (23kg\/50lb each)",
+        "Economy Comfort":"2 pieces (23kg\/50lb each)"
+    },
+    {
+        "Economy Lite":"1 piece (7kg\/15lb)",
+        "Economy Classic":"1 piece (7kg\/15lb)",
+        "Economy Convenience":"1 piece\u00a0(7kg\/15lb)",
+        "Economy Comfort":"1 piece\u00a0(7kg\/15lb)"
+    }
+]

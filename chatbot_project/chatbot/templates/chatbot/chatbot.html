@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <form id="chat-form">
+        <label for="query">Enter Query:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Ask</button>
+    </form>
+    <div id="response">
+        <!-- Chatbot response will be displayed here -->
+    </div>
+
+    <script>
+        // Handle form submission
+        $('#chat-form').on('submit', function(e) {
+            e.preventDefault();  // Prevent default form submission
+
+            var query = $('#query').val();  // Get the user's query
+
+            // Send an AJAX POST request to the chatbot API
+            $.ajax({
+                url: '/chatbot/',  // API endpoint
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ query: query }),  // Send query as JSON
+                success: function(response) {
+                    // Display the response from the chatbot in the #response div
+                    $('#response').html(JSON.stringify(response.response, null, 2));
+                },
+                error: function(xhr, status, error) {
+                    // Handle errors (if any)
+                    $('#response').html('Error: ' + xhr.responseText);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
