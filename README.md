@@ -21,5 +21,6 @@ Before running the project, ensure you have the following installed on your syst
 - create folder in you Desktop any other location
 - clone the repo using the command given below
 ```git
-git clone <repository_url>
+git clone <https://github.com/mayurdalvi3003/chatbot.git>
 ```
+
